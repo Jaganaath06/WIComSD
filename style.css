@@ -537,6 +537,8 @@ footer{
 
 .about-us{
   font-family: 'Inter',sans-serif;
+  font-size: 18px;
+  
 }
 
 .flex-container{
@@ -558,12 +560,17 @@ footer{
 
 }
 
-.about-us p{
+.clg-des,.dept-des{
   text-align: justify;
+  line-height: 1.7rem;
 }
 
 .about-us li{
   line-height: 1.5rem;
+}
+
+.about-head{
+  line-height: 3.5rem;
 }
 
 
@@ -571,14 +578,21 @@ footer{
 .clg-head,.dept-head{
   color: #48246e;
   font-weight: 700;
+  text-align: center;
+}
+
+.image{
+  width: 90%;
+  align-items: center;
 }
 
 .dept{
-    padding:50px;
+    padding:40px;
     text-align: justify;
     margin: auto;
     background-color: #fafafa;
-    line-height: 1.3rem;
+    
+    color: #434343;
     
 }
 
@@ -590,6 +604,12 @@ footer{
 .left{
   border-right: 1px solid #e0e0e0;
   text-align: center;
+}
+
+.clg-img{
+  width: 400px;
+  padding: 20px;
+  background-color: #ff676715;
 }
 
 .flex-item{
