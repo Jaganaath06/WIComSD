@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&family=Josefin+Sans:wght@600&family=Josefin+Slab:ital,wght@1,500&family=Lekton:wght@700&family=Merienda:wght@400;700&family=Poppins:wght@400;500&family=Staatliches&family=Yeseva+One&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+.logo{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 80px;
+  z-index: 5;
+}
+
+.logo1{
+  width: 80px;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+
+nav{
+ 
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+/* navbar styling starts here */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  min-height: 40px;
+  align-items: center;
+   background: url(./endless-constellation.svg); 
+  background-color: #330033;
+  padding-top: 10px;
+  position: fixed;
+  
+  width: 100%;
+  text-transform: uppercase;
+  /* padding: 10px; */
+  
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-evenly;    
+}
+
+.nav-links{
+  position: fixed;
+  right: 20px;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+nav a{
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  padding: 0px 15px 0 15px; 
+  color: white;
+  border-right: 1px solid rgba(128, 128, 128, 0.541);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.nav-links a:hover{
+color:white;
+}
+
+.active-nav{
+  color: #FF9D59;
+}
+
+.keydates{
+  background-color:#5F3789 ;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+}
+
+.burger{
+  z-index: 2;
+  display:none;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.burger div{
+  width:25px;
+  height: 3px;
+  background-color: white;
+  margin:5px;
+  transition: all 0.2s ease;
+}
+
+
+
+@media screen and (max-width:1024px) {
+  body{
+      overflow-x: hidden;
+      /* overflow-y: hidden; */
+  }
+
+  nav{        
+      right:0px;
+  }
+
+  .nav-links{
+      background-color: #330033;
+      z-index: 1;
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      height: 100vh;
+      width: max-content;
+      padding: 20px;
+      align-items: center;
+      justify-content:space-evenly;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  nav a{
+      border-right: none;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .burger{
+      display:block;
+  }
+}
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+      opacity:0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity:1;
+      transform: translateX(0px);
+  }
+}
+
+.convert .line1{    
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.convert .line2{
+  opacity:0;
+}
+.convert .line3{  
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+/* navbar styling ends here */
+/* ---------------------------------------------------------------------------------- */
+
+
+.keydates{
+  background-color:#5F3789 ;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+}
+
+.icons{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.nav-icon{
+  display: none;
+  float: right;
+  color: #485DA7;
+}
+
+.info{
+    width: 100%;
+    padding-top: 70px;
+    /* height: 100vh; */
+    background: url(./endless-constellation.svg);
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    
+}
+
+.call-info{
+  width: 100%;
+    padding-top: 70px;
+    /* height: 100vh; */
+    background: url(./endless-constellation.svg);
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+
+.info-sub-1{
+    position: relative;
+    font-family: 'DM Serif Display',serif;
+    top: 30px;
+    font-size: 43px;
+    color: white;
+    font-weight: 500;
+    padding:0 20px 0 20px ;
+    background:#330033;
+    width: max-content;
+    margin: auto;
+    z-index: 2;
+}
+
+.info-sub-2{
+  font-family: 'Staatliches', cursive;
+    color:#FF9D59;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 55px;
+    line-height: 3.5rem;
+    margin: 40px;
+}
+
+
+hr{
+  border:none;
+    border-bottom: 0.5px solid rgba(245, 245, 245, 0.356);
+}
+
+
+.info-sub-4:hover,.btn:hover{
+  box-shadow: none;
+}
+
+
+
+.info-sub-3{
+ 
+  font-size:2.5rem;
+  
+ 
+  margin: auto;
+  width: max-content;
+  background: url(./sun-tornado.svg); 
+     font-family: 'DM Serif Display';
+     color: white;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 2px;
+  
+     padding: 3px 30px;
+  
+ }
+ 
+
+.info-sub-5{
+  color: white;
+  line-height: 1.8rem;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.4rem;
+  padding: 20px;
+    margin: 0;
+   
+}
+
+
+.info-sub-4{
+  color: #ff6767;
+  position: relative;
+  padding: 7px;
+  background: #fafafa09;
+  font-weight: 700;
+  font-size: 25px;
+  padding-bottom: 17px;
+  margin: 20px 0 10px 0;
+  font-family: 'Merienda', cursive;
+    
+}
+
+.info-sub-4 i{
+  font-size: 50px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 10px;
+    color: red;
+}
+
+.info-sub-6{
+  font-family: 'DM Serif Display',serif;
+  font-size: 30px;
+  margin: 10px ;
+  color: white;
+}
+
+
+.tags{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.btn{
+  background: white;
+  padding: 5px;
+  width:280px;
+  font-size: 17px;
+  margin: 20px 0 20px 0 ;
+  font-family: 'Poppins',sans-serif;
+  color: #434343;
+  font-weight: 600;
+  border:none;
+  box-shadow: 5px 5px 0px rgba(255, 136, 136, 0.4);
+  display: flex;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.btn p{
+  margin:2px auto;
+}
+
+.btn svg{
+ padding: 0 5px;
+ color: #FF9D59;
+}
+
+#theme{
+  width: 80%;
+  margin:20px  auto;
+  
+  padding:20px ;
+}
+
+#theme p{
+  margin:0.5rem 0;
+}
+
+.down{
+  width:100%;
+  height:2rem;
+  color:#FF9D59;
+  margin:20px 0;
+}
+
+.theme-sub-1{
+  font-family: 'DM Serif Display',serif;
+  font-size: 25px;
+  color: #8f8f8f;
+  text-align: center;
+}
+
+.theme-sub-2{
+  font-family: monospace;
+  color: #FF9D59;
+  font-size: 25px;
+  text-align: center;
+}
+
+.theme-sub-3{
+  font-family: 'Inter',sans-serif;
+  font-size: 18px;
+  line-height: 1.7rem;
+  text-align: justify;
+  color: #434343;
+}
+
+
+.dates{
+  width: 80%;
+  margin: auto;
+  background-color: #fafafa;
+}
+
+.dates-sub-1{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #434343;
+  padding: 20px 0 0 0;
+  margin: 0;
+  text-align: center;
+}
+
+.dates-sub-2{
+  padding:0 ;
+  list-style: none;
+  width: 70%;
+  margin: auto;
+  color: #434343;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.dates-sub-2 i{
+  color: #FF9D59;
+  padding: 0 10px;
+}
+
+.dates-sub-2 li{
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Inter',sans-serif;
+}
+
+.date{
+  float: right;
+  text-align: center;
+    color: #ff5151;
+   
+  font-weight: 500;
+}
+
+.date-br{
+  display: none;
+}
+
+
+footer{
+  background:url(./endless-constellation.svg);
+}
+
+.inline{
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline img{
+  transform: scale(0.7);
+  width: 110px;
+}
+
+
+.address{
+  color: #e0e0e0;
+    font-family: 'Inter';
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+}
+
+.dev{
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 5px;
+  color: #b39ddb;
+  line-height: 1.4rem;
+}
+
+.dev-name{
+  color: #FF9D59;
+  font-family: 'Josefin Slab', serif;
+  font-size: 18px;
+}
+
+.dev-br{
+  display: none;
+}
+
+
+/* Call for Papers */
+
+.info-head{
+  color: white;
+  margin: auto;
+  padding: 10px 0 0 0 ;
+  font-size: 40px;
+  border-bottom: 1px solid #FF9D59;
+  font-family:'DM Serif Display',serif;
+  font-weight: 500;
+  width: max-content;
+}
+
+.guidelines{
+  width: 80%;
+  margin: auto;
+}
+
+.guide-sub-1{
+  font-family: 'Staatliches', cursive;
+  font-weight: 600;
+  font-size: 30px;
+  color: #434343;
+  padding: 40px 0 0 0;
+  letter-spacing: 2px;
+  color: #FF9D59;
+    line-height: 1.9rem;
+ 
+}
+
+.guide-sub-2{
+   margin-top: 20px;
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: #434343;
+}
+
+.bold{
+  color: #FF9D59;
+  font-weight: 500;
+}
+
+
+.guide-sub-3{
+  font-family: 'Inter',sans-serif;
+  font-size: 18px;
+  color: #434343;
+}
+
+
+/*about us page*/
+
+
+
+.about-us{
+  font-family: 'Inter',sans-serif;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter',sans-serif;
+  width: 90%;
+  margin: auto;
+  color: #434343;
+  line-height: 1.3rem;
+}
+
+.about-us hr{
+  
+    margin: 10px 0px;
+    border : 0;
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(58, 58, 58, 0.75), rgba(0, 0, 0, 0)); 
+
+}
+
+.about-us li{
+  line-height: 1.5rem;
+}
+
+
+
+.clg-head,.dept-head{
+  color: #48246e;
+  font-weight: 700;
+}
+
+.dept{
+    padding: 5%;
+    text-align: justify;
+    margin: auto;
+    background-color: #fafafa;
+    line-height: 1.3rem;
+    
+}
+
+.dept li{
+  list-style: none;
+  padding: 5px 0;
+}
+
+.left{
+  border-right: 1px solid #e0e0e0;
+}
+
+.flex-item{
+  padding: 20px;
+  width: 50%;
+}
+
+.about-us ul{
+  padding: 0;
+}
+
+.about-us i{
+  
+    color: #ff9d59;
+    padding: 0 5px;
+
+}
+
+.about-us h2{
+  color: #48246e;
+  font-family: 'Poppins',serif;
+}
+
+.flex-container li{
+  list-style: none;
+}
+
+/*---------*/
+
+@media(max-width:1024px){
+  .navigation{
+    display: none;
+  }
+
+  .nav-icon{
+    display: block;
+  }
+
+  .br{
+    display: none;
+  }
+
+  .btn{
+    width: 250px;
+    font-size: 15px;
+  }
+
+  .info{
+    padding-top: 70px;
+  }
+  
+}
+ 
+@media(max-width:850px){
+  .tags{
+    display: block;
+  }
+
+  .btn{
+    margin: 10px auto;
+    transform: scale(0.8);
+  }
+
+  .logo{
+    width: 60px;
+  }
+  .info{
+    padding-top: 45px;
+  }
+
+  .info-sub-3{
+    font-size: 2rem;
+  }
+
+  .info-sub-2{
+    line-height: 2.7rem;
+    font-size: 45px;
+    margin: 30px auto;
+    width: 90%;
+  }
+
+  .info-sub-4{
+    font-size: 20px;
+  }
+
+  .info-sub-4 i{
+    font-size: 40px;
+    padding-left:5px ;
+    padding-right:5px ;
+  }
+
+  .info-sub-5{
+    font-size: 1.3rem;
+  }
+
+  .info-sub-6{
+    font-size: 1.3rem;
+  }
+
+  .btn{
+    font-size: 1.1rem;
+    width: 280px;
+  }
+
+  .theme-sub-2{
+    font-size: 20px;
+  }
+
+  .theme-sub-3{
+    font-size: 15px;
+  }
+
+  .dates-sub-2{
+    width: 90%;
+  }
+
+  .dates-sub-1{
+    font-size: 27px;
+  }
+
+  .dates-sub-2 li{
+    font-size: 15px;
+  }
+
+  /*Call for papers*/
+  .guide-sub-1{
+    font-size: 25px;
+  }
+
+  .guide-sub-2{
+    font-size: 17px;
+  }
+  
+  
+}
+
+@media(max-width:740px){
+
+  .dates-sub-2{
+    width: 80%;
+  }
+  
+  .date-br{
+    display: block;
+  }
+
+  .date{
+    float: none;}
+
+  .dates-sub-2 li{
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .dates-sub-2 i{
+    display: none;
+  }
+
+  .logo1{
+    display: none;
+  }
+
+  .dev-br{
+    display: block;
+    
+  }
+
+  .sep{
+    display: none;
+  }
+}
+
+
+@media(max-width:570px){
+
+
+  .logo{
+    width: 60px;
+  }
+
+  .info{
+    padding-top: 60px;
+  }
+  .info-sub-1{
+    background-color: transparent;
+    margin: 0;
+    font-size: 35px;
+  }
+
+  .hr-top{
+    display: none;
+  }
+
+  .info-sub-2{
+    font-size: 30px;
+    text-align: left;
+    line-height: 2rem;
+  }
+  
+
+  .down{
+    transform: scale(0.8);
+    margin: 20px auto;
+  }
+
+  .info-sub-5{
+    font-size: 1.1rem;
+  }
+}

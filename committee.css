@@ -1,0 +1,119 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+    
+    font-family: 'Poppins', sans-serif;
+    
+    font-weight: 400;
+}
+
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+    
+    margin: 20px auto;
+    color: #48246e;
+    font-weight: 700;
+}
+
+hr { 
+    margin: 10px 0px;
+    border : 0;
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(58, 58, 58, 0.75), rgba(0, 0, 0, 0)); 
+}
+
+.committee-container li{
+    font-weight: bold;
+}
+
+.committee-container ul li{
+    margin: 5px 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family:'Inter',sans-serif;
+    padding-bottom: 20px;
+}
+
+#committee-heading{
+    color:#fff;
+}
+
+.committee-content-container{
+    padding: 30px 70px;
+    text-align: center;
+    margin:10px auto;
+    width: 1000px;
+    background-color: #fff;
+}
+
+span{
+   line-height: 25px;
+   font-family:'Inter',sans-serif;
+   font-size: 15px;
+   color: #333333;
+    
+}
+
+.no-bulletin{
+    list-style: none;
+   
+}
+
+.Trustee{
+    font-size: 25px;
+    font-weight: 600;
+    color: #ff7919;
+}
+
+
+
+.committee-container ul{
+       
+    margin:0px 20px;
+    list-style:square;
+}
+
+.committee-container li{
+    color: #ff7919;
+    font-weight: 500;
+}
+
+.committee-content{    
+    display:flex;
+    flex-direction: row;
+}
+
+.committee-content-left{
+    width: 50%;
+    border-right: 1px solid #e0e0e0;
+}
+
+.committee-content-right{
+    width:50%;
+}
+
+
+@media (max-width:1020px){
+    .committee-content{
+        display: block;
+    }
+
+    .committee-content-left{
+        border: none;
+        width: 100%;
+    }
+
+    .committee-content-right{
+        width: 100%;
+    }
+
+    .committee-content-container{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        margin: auto;
+    }
+
+}

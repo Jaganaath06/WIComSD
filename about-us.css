@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0 0 0 0;
+  text-decoration: none;
+  
+}
+
+body {
+  background-color: white;
+}
+
+hr {
+  width: 90%;
+  margin-top: 25px;
+  margin-left: 75px;
+  color: #330033;
+  border: 10px solid #330033;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #330033;
+  color: white;
+  font-family: "DM Serif Display", serif;
+}
+
+h2 {
+  color: #ff9d59;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 20px 20px 20px 20px;
+  flex-wrap: row wrap;
+  justify-content: space-around;
+}
+
+.item {
+  padding: 20px 20px 20px 20px;
+}
+
+div .item h2 {
+  padding-left: 150px;
+}
+
+.item img {
+  width: 50%;
+  height: 50vh;
+}
+
+.item p {
+  margin-left: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: block;
+    margin: 0;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+  }
+  div .item h2 {
+    text-align: left;
+  }
+  .item p {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  hr {
+    visibility: hidden;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 20px 20px 20px 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: #330033;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  text-align: left;
+}
+
+.flex-item-vision {
+  background: #330033;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.flex-item-mission {
+  background: #330033;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+}
