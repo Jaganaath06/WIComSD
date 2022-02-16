@@ -432,6 +432,9 @@ hr{
   display: none;
 }
 
+.br{
+  display: block;
+}
 
 footer{
   background:url(./endless-constellation.svg);
@@ -555,6 +558,10 @@ footer{
 
 }
 
+.about-us p{
+  text-align: justify;
+}
+
 .about-us li{
   line-height: 1.5rem;
 }
@@ -567,7 +574,7 @@ footer{
 }
 
 .dept{
-    padding: 5%;
+    padding:50px;
     text-align: justify;
     margin: auto;
     background-color: #fafafa;
@@ -582,6 +589,7 @@ footer{
 
 .left{
   border-right: 1px solid #e0e0e0;
+  text-align: center;
 }
 
 .flex-item{
@@ -632,7 +640,20 @@ footer{
   .info{
     padding-top: 70px;
   }
+
+  .flex-container{
+    display: block;
+  }
+
+  .flex-item{
+    width: 90%;
+    
+  }
   
+  .left{
+    border: none;
+    text-align: center;
+  }
 }
  
 @media(max-width:850px){
@@ -749,7 +770,8 @@ footer{
     
   }
 
-  .sep{
+
+  .sep,.br{
     display: none;
   }
 }
