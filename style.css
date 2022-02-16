@@ -531,6 +531,21 @@ footer{
 }
 
 
+.mailto{
+  font-family: 'Staatliches';
+    padding: 20px;
+    text-align: center;
+    background: #330033;
+    margin: 10px;
+    color: #ff8d9d;
+    font-size: 30px;
+}
+
+.mailto a{
+  font-family: 'Inter',serif;
+  padding: 0 20px ;
+}
+
 /*about us page*/
 
 
@@ -797,6 +812,10 @@ footer{
 
   .sep,.br{
     display: none;
+  }
+
+  .mailto{
+    font-size: 22px;
   }
 }
 
