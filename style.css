@@ -681,6 +681,10 @@ footer{
     display: block;
   }
 
+  .clg-img{
+    width: 80%;
+  }
+
   .btn{
     margin: 10px auto;
     transform: scale(0.8);
