@@ -516,6 +516,7 @@ footer{
     font-size: 18px;
     text-align: justify;
     color: #434343;
+    line-height: 1.5rem;
 }
 
 .bold{
@@ -772,9 +773,12 @@ footer{
   }
 
   .guide-sub-2{
-    font-size: 17px;
+    font-size: 15px;
   }
   
+  .guide-sub-3{
+    font-size: 15px;
+  }
   
 }
 
