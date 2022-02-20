@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #330033;
+  background:url(./endless-constellation.svg);
 }
 svg {
   position: absolute;
