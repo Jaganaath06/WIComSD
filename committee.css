@@ -33,7 +33,7 @@ hr {
     text-align: left;
     font-size: 1.2rem;
     font-family:'Inter',sans-serif;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 #committee-heading{
@@ -85,6 +85,14 @@ span{
     flex-direction: row;
 }
 
+/* .lap-view{
+    display: block;
+} */
+
+.mob-view{
+    display: none;
+}
+
 .committee-content-left{
     width: 50%;
     border-right: 1px solid #e0e0e0;
@@ -97,6 +105,14 @@ span{
 
 @media (max-width:1020px){
     .committee-content{
+        display: block;
+    }
+
+    .lap-view{
+        display: none;
+    }
+
+    .mob-view{
         display: block;
     }
 
